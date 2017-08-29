@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+    <!--<ListView-->
+        <!--android:id="@+id/listview"-->
+        <!--android:layout_width="240dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start">-->
+
+    <!--</ListView>-->
+    //   app:itemIconTint="#0fea2c" nếu để null sẽ ra màu mặc định của item
+    <android.support.design.widget.NavigationView
+        app:itemTextColor="#e9c80c"
+        app:itemIconTint="#1a0fea"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation_view"
+        android:layout_gravity="start"
+        app:theme="@style/Base.Theme.AppCompat.Light"
+        app:menu="@menu/item_drawer"
+        app:headerLayout="@layout/header_drawer_layout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"/>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
